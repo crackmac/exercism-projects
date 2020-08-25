@@ -1,9 +1,9 @@
 //
-// This is only a SKELETON file for the 'Resistor Color' exercise. It's been provided as a
+// This is only a SKELETON file for the 'Resistor Color Duo' exercise. It's been provided as a
 // convenience to get you started writing code faster.
 //
 
-export const COLORS = [
+const COLORS = [
   'black',
   'brown',
   'red',
@@ -16,8 +16,7 @@ export const COLORS = [
   'white'
 ]
 
-export const colorCode = (color="black") => {
-  return COLORS.indexOf(color)
+export const decodedValue = (colors) => {
+  return((COLORS.indexOf(colors[0]) * 10 )+ COLORS.indexOf(colors[1]))
   // throw new Error("Remove this statement and implement this function");
 };
-
